@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.weather_project.MainActivity"
+    android:background="#FFFFFF"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       android:orientation="horizontal"
+       >
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:orientation="vertical">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="3"
+               android:text="temperature"
+               android:id="@+id/temperature"
+               android:gravity="bottom"
+               android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+               android:textStyle="normal|bold"
+               />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#E0E0E0"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:text="city"
+               android:id="@+id/city"
+               android:textSize="20sp"
+               android:gravity="bottom"
+               android:textStyle="normal|bold" />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#E0E0E0"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:text="state"
+               android:id="@+id/state"
+               android:textSize="20sp"
+               android:gravity="bottom"
+               android:textStyle="normal|bold" />
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#E0E0E0"/>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:text="country"
+               android:id="@+id/country"
+               android:textSize="20sp"
+               android:gravity="bottom"
+               android:textStyle="normal|bold" />
+
+       </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/imageview"
+            android:src="@mipmap/ic_launcher"/>
+
+   </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Weather"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|italic" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="value1"
+            android:id="@+id/weather"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Relative Humidity"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="value2"
+            android:id="@+id/humidity"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Wind Speed"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="value3"
+            android:id="@+id/wind"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Sunrise"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="value4"
+            android:id="@+id/sunrise"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Sunset"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|italic"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="value5"
+            android:id="@+id/sunset"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="GET WEATHER FORECAST "
+        android:layout_gravity="center"
+        android:textStyle="normal|italic"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:onClick="forecast"/>
+
+</LinearLayout>
+
